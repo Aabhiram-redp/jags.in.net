@@ -8,3 +8,13 @@ Jags and 7chip currently own [7chip](http://7chip.com), [Videoreels](http://vide
  
 This website created using Laravel framework, Angular JS, also use HAML, SASS.
 
+### Do 
+ - Please Use Koala Frontend software to convert coffeescript,sass files [koala-app](http://koala-app.com/)
+
+### Do not 
+ - gulp and gulp-watch will show errors, we use koala app to convert files 
+ 
+#### Updates 
+ - 03/01/2016 : Laravel version updated from 5.1 to 5.2  
+ 
+
