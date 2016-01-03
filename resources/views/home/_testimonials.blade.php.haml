@@ -1,0 +1,43 @@
+%section.testimonials
+  .container
+    .row
+      .col-xs-12
+        %h5.text-center.text-uppercase.text-bold
+          TESTMONIALS
+        %h2.features-title.text-center
+          What People Saying about us
+        .testimonials-content
+          .row
+            .col-xs-12.col-sm-12.col-md-12
+              .testimonials-customer
+                .testimonial-customer
+                  @for ( $x=1; $x<=10; $x++)
+                  .testimonial-contents
+                    .testimonial-slick-slider
+                      .testimonial-content
+                        "I Like Jags, Jags is one of the best company for Web development"
+                  @endfor
+                .testimonial-customer-profile
+                  .profile-wrapper
+                    .testimonial-profile
+                      .testimonial-image
+                        @for ( $x=1; $x<=10; $x++)
+                        .testimonial-slick-image-slider
+                          %img{:src=>"{{asset('images/profile/testimonial-name.jpg')}}"}
+                        @endfor
+                      .nav-links
+                        %a.prev-link
+                          %span.glyphicon.glyphicon-chevron-left
+                        %a.next-link
+                          %span.glyphicon.glyphicon-chevron-right
+          .row
+            .col-xs-12
+              .clients-wrapper
+                %h4.text-center.clients-title
+                  Here are some of our happy clients
+                .clients
+                  .clients-slick-slider
+                    @for($x=1;$x<9;$x++)
+                    .client
+                      %img{:src=>"http://placehold.it/350x150"}
+                    @endfor

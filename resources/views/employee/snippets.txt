@@ -1,0 +1,4 @@
+# Alternate classes in view
+@foreach($resume as $key => $value)
+    .resume-content{:class=>"{{$key%2?'right':'left'}}",:id=>"resume-{{$key}}"}
+@endforeach

@@ -1,0 +1,48 @@
+.employee-contact
+  .container
+    %h1.title.page-title.text-center
+      Contact
+    .row
+      .col-xs-12.col-sm-6
+        %h3.text-uppercase.text-center
+          LET'S TALK
+        %ul.contact-social
+          %li
+            %a{:href=>"#"}
+              %span.fa.fa-phone
+              8943648198, 8281604078
+          %li
+            %a{:href=>"#"}
+              %span.fa.fa-envelope
+              sibinx7@gmail.com
+          %li
+            %a{:href=>"#"}
+              %span.fa.fa-skype
+              sibin.xavier.1
+          %li
+            %a{:href=>"#"}
+              %span.fa.fa-twitter
+              @7chipcom
+          %li
+            %a{:href=>"#"}
+              %span.fa.fa-facebook
+              sibinx7@outlook.com
+      .col-xs-12.col-sm-6
+        %h3.text-uppercase.text-center
+          Send Message
+        .employee-contact-form
+          .row
+            .col-xs-12
+              .form-group
+                %label Name
+                %input{:type=>"text",:class=>"form-control",:placeholder=>"Your Name...."}
+              .form-group
+                %label Email
+                %input{:type=>"email",:class=>"form-control",:placeholder=>"Your Email..."}
+              .form-group
+                %label Messahe
+                %textarea{:class=>"form-control",:rows=>"5",:placeholder=>"Your Message.."}
+              .form-group
+                %button{:type=>"submit",:class=>"btn btn-lg btn-success contact-form-submit"}
+                  Send Message
+

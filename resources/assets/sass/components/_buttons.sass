@@ -1,0 +1,24 @@
+$primarty-color: #5ccdaa
+$primary-text-color: #fff
+$secondary-color: #ddd
+$ternary-color: #eee
+$danger-color: #999
+$info-color: #000
+$button-lg-font-size : 26px
+.text-uppercase
+  text-transform: uppercase
+.text-capitalize
+  text-transform: capitalize
+.btn-primary
+  background: $primarty-color
+  color: $primary-text-color
+  box-shadow: none
+  border-color: darken($primarty-color,5%)
+  transition: all 0.5s ease-in-out 0.05s
+  border-radius: 3px
+  &:hover,:active,:focus
+    background: darken($primarty-color,15%)
+    border-color: darken($primarty-color,17%)
+.btn-lg
+  font-size: $button-lg-font-size
+  padding: 12px 30px 

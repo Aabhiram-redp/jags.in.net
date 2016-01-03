@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: jags
+        psr4_prefix: jags
+        src_path: app

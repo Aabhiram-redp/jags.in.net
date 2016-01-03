@@ -1,0 +1,600 @@
+@import "components/vendor/bootstrap/bootstrap"
+@import "components/vendor/bootstrap/bootstrap-compass"
+@import "components/vendor/bootstrap/bootstrap-mincer"
+@import "components/vendor/bootstrap/bootstrap-sprockets"
+@import "components/common"
+@import "components/employee_common"
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300,700)
+
+//*  Colors */
+$whiteColor : #fff
+
+html
+  width: 100% 
+  height: 100% 
+  display: block
+  margin: 0 
+  padding: 0
+  font-family: 'Titillium Web', sans-serif
+  font-size: 14px
+  line-height: normal
+body
+  @extend html
+
+// Main Parts
+*
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+.employee
+  display: table
+  height: 100%
+  width: 100%
+  background: url("../images/home_img.jpg")
+  background-position: center
+  background-size: cover
+  position: relative
+  &:after
+    position: absolute
+    background: rgba(0,0,0,0.5)
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+.employee-landing
+  display: table-cell
+  width: 100%
+  height: 100%
+  vertical-align: middle
+  position: relative
+  z-index: 2
+  text-align: center
+.employee .title
+  color: #fff
+  font-size: 8rem
+  line-height: normal
+  margin: 10px 0
+.employee .profession
+  font-size: 3rem
+  margin: 10px 0
+  font-weight: 700
+  text-transform: uppercase
+  color: #fff
+.employee-social
+  display: table
+  margin: 15px auto
+  ul
+    display: table
+    position: relative
+    list-style: none
+    li
+      display: inline-block
+      list-style: none
+      margin-right: 10px
+      a
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        border: 2px solid $whiteColor
+        text-decoration: none
+        line-height: 46px
+        font-size: 24px
+        display: block
+        text-align: center
+        color: $whiteColor
+      &:after
+        margin-left: 0
+
+.home-navbar
+  margin-bottom: 0
+  z-index: 11
+  @include border-radius(0,0,0,0)
+  .home-navbar-brand
+    font-size: 1.6rem
+    font-weight: bold
+    color: #ed0000
+  .home-main-menu
+    ul
+      display: block
+      li
+        display: inline-block
+        a
+          font-size: 1.2rem
+          color: #999
+          text-transform: uppercase
+.employee-about
+  display: block
+  height: auto
+  padding: 30px 0
+.page-title
+  color: #333
+  font-size: 2.8rem
+  font-weight: bold
+  padding-bottom: 10px
+  position: relative
+  display: table
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 25px
+  span
+    color: #ed0000
+  &:after
+    content: ''
+    width: 30%
+    height: 3px
+    position: absolute
+    bottom: 0
+    left: 35%
+    right: 35%
+    background-color: #ed0000
+.page-sub-title
+  color: #333
+  font-size: 2.4rem
+  font-weight: bold
+  padding: 10px 35px
+  background: #dedede
+  border-radius: 4px
+  display: table
+  margin: 30px auto
+.employee-about .page-content
+  display: block
+  margin: 20px 0
+  .self-highlight
+    color: #666
+    font-weight: bold
+    font-size: 1.3rem
+    line-height: 2rem
+    text-align: center
+    position: relative
+    padding-left: 15px
+    padding-right: 15px
+    @media all and (max-width: 767px)
+      padding-left: 25px
+      padding-right: 25px
+    &:after
+      content: '"'
+      position: absolute
+      top: 3px
+      left: 0px
+      font-size: 2.2rem
+    &:before
+      @extend :after
+      right: 0
+      left: initial
+  .self-description
+    display: block
+    padding: 20px 0 30px
+    font-weight: 300
+    color: #333
+    font-size: 1.25rem
+    text-align: justify
+    text-align-last: left
+    -moz-text-align-last: left
+.my-details
+  display: block
+  padding: 20px 0 80px
+.my-details .my-profile
+  display: block
+  width: 100%
+.my-details .profile-image
+  @extend .my-profile
+  padding: 5px
+  border: 1px solid #ddd
+  background: #fff
+  box-shadow: 0 0 1px 0 #999
+  position: relative
+  img
+    border: 1px solid #ddd
+    display: block
+    width: 100%
+    height: auto
+  &:after
+    display: block
+    content: ''
+    width: 100%
+    height: 105%
+    position: absolute
+    transform: rotate(-5deg)
+    -webkit-transform: rotate(-5deg)
+    @extend .profile-image
+    top: -3px
+    left: -2px
+    z-index: -1
+    clip: rect(-200px, 400px,200px, -540px)
+
+.my-details .contact-details
+  table
+    tr
+      td
+        vertical-align: top
+        font-size: 1.2rem
+        min-height: 30px
+        line-height: 1.6rem
+        padding-bottom: 10px
+        p
+          margin-bottom: 3px
+        &:first-child
+          font-weight: bold
+          min-width: 100px
+        &:last-child
+          position: relative
+          padding-left: 5px
+          &:before
+            content: ":"
+            position: absolute
+            top: -1px
+            left: -5px
+            z-index: 1
+.my-details  .download-resume
+  display: block
+  clear: both
+  padding: 5px
+  text-align: center
+  a.btn-resume
+    background: #fa3e25
+    color: #fff
+    padding-left: 30px
+    padding-right: 30px
+    @include border-radius(4px,4px,4px,4px)
+    span
+      margin-right: 5px
+.hobbies
+  > .title
+    color: #777
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 20px
+    font-weight: bold
+  .my-hobbies
+    margin-right: -15px
+    display: block
+    ul
+      display: block
+      margin: 0
+      padding: 0
+      li
+        display: table
+        width: 72px
+        height: 72px
+        margin: 0 10px 10px 0
+        float: left
+        a
+          display: table-cell
+          vertical-align: middle
+          text-align: center
+          text-decoration: none
+          width: 72px
+          height: 72px
+          background: #eee
+          border: 1px solid #d9d9d9
+          padding: 15px 10px
+          span
+            display: block
+            text-align: center
+            color: #888
+            font-size: 32px
+
+//My Resume
+.employee-resume
+  padding: 60px 0
+  background-color: #e8eaef
+.my-resume
+  display: block
+  > .title
+    font-weight: bold
+.resume-box
+  display: block
+  position: relative
+  .resume-box-inner
+    margin-bottom: 60px
+    display: block
+  .page-sub-title
+    margin-bottom: 0
+  &:after
+    left:  50%
+    top: 0
+    width: 3px
+    height: 100%
+    background: #ccc
+    margin-left: -1.5px
+    min-height: 200px
+    position: absolute
+    content: ''
+    z-index: 1
+  .resume-inner
+    position: relative
+    margin-top: 80px
+    .resume-content
+      display: block
+      position: relative
+      padding: 10px 15px 20px
+      min-height: 200px
+      .resume-content-inner
+        border: 1px solid #ddd
+        border-radius: 5px
+        padding: 15px 20px
+        background: #f3f3f3
+        position: relative
+        z-index: 2
+      &.right
+        margin-left: 50%
+        @media all and (max-width: $screen-xs - 1)
+          margin-left: 0
+          margin-right: 0
+      &.left
+        margin-right: 50%
+        @media all and (max-width: $screen-xs - 1)
+          margin-left: 0
+          margin-right: 0
+      .position-title
+        font-weight: bold
+      ul.company-year
+        display: block
+        margin: 0
+        padding: 0
+        li
+          display: inline-table
+          list-style: none
+          vertical-align: middle
+          margin-right: 20px
+          position: relative
+          .tooltip
+            display: table
+            .tooltip-inner
+              max-width: 540px
+              min-width: 340px
+          &:last-child
+            margin-right: 0
+            &:before
+              content: ''
+              position: absolute
+              width: 10px
+              height: 10px
+              border-radius: 50%
+              background: #fa3e25
+              left: -15px
+              top: 50%
+              margin-top: -5px
+          a
+            color: #666
+            font-size: 16px
+            text-decoration: none
+            transition: all 0.2s linear 0.05s
+            white-space: nowrap
+            &:hover,&:active,&:focus
+              color: #333
+        li.company
+          font-weight: 600
+        li.year
+          font-weight: normal
+.experience-section
+  display: block
+  z-index: 6
+  position: relative
+  .experience-icon
+    @include experience_icon_style
+.resume-stop
+  display: table
+  margin: 0
+  .experience-icon
+    @include experience_icon_style
+    bottom: 0
+    z-index: 15
+
+//Employee Quotes
+.employee-quotes
+  background: url("../images/employees/bg/quotes-bg.jpg")
+  background-size: cover
+  min-height: 420px
+  position: relative
+  padding: 60px 0
+  .title
+    font-weight: bold
+    color: #fff
+    position: relative
+    z-index: 2
+    letter-spacing: 12px
+    -webkit-animation: changeSpacing 16s infinite
+    -o-animation: changeSpacing 16s infinite
+    animation: changeSpacing 16s infinite
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    content: ''
+    background: rgba(103,57,45,0.6)
+.quotes-quotes
+  display: block
+  clear: both
+  overflow: hidden
+  position: relative
+  z-index: 3
+  padding: 60px 0 0
+  .quotes-container
+    display: block
+    width: 100%
+    overflow: hidden
+    .each-quotes
+      color: #fff
+      display: inline-block
+      .quote-content
+        font-size: 22px
+        line-height: 36px
+        letter-spacing: 3px
+        text-align: center
+      .quotes-author
+        font-size: 16px
+        font-weight: bold
+        text-align: center
+        margin-top: 30px
+.quotes-nav
+  position: relative
+  z-index: 2
+  text-align: center
+  display: block
+  margin-top: 30px
+  .slick-pvs
+    border: none
+    background: transparent
+    font-size: 24px
+    line-height: normal
+    color: #fff
+    outline: none
+    font-weight: 300
+    transition: all 0.1s ease-out 0.05s
+    -webkit-transition: all 0.1s ease-out 0.05s
+    &:active,&:focus,&:hover
+      background: transparent
+      outline: none
+      border: none
+      text-shadow: 2px 0px 5px #333
+      color: #fa3e25
+  .slick-nxt
+    @extend .slick-pvs
+
+//My Service section
+.employee-myservices
+  padding: 80px 0
+  display: block
+  background: #fff
+
+  .title
+    font-weight: bold
+  .my-service-inner
+    display: block
+    margin: 30px 0 20px
+.employee-myservice
+  display: block
+  margin-bottom: 40px
+  min-height: 100px
+  .service-icon
+    width: 85px
+    height: 85px
+    border-radius: 6px
+    background: #fa3e25
+    color: #fff
+    line-height: 84px
+    font-size: 42px
+    text-align: center
+  &.right
+    margin-right: 85px
+    text-align: right
+    .service-icon
+      margin-right: -85px
+      float: right
+  &.left
+    margin-left: 85px
+    text-align: left
+    .service-icon
+      margin-left: -85px
+      float: left
+  .service-content
+    padding: 0px 15px 10px
+    .title
+      margin-top: 0
+      text-transform: uppercase
+    article
+      font-size: 15px
+//Skills section
+.employee-skills
+  padding: 60px 0
+  background: #e7e7e7
+.employee-skills-wrapper
+  display: block
+  margin: 30px 0 20px
+.skill-chart-wrapper
+  display: table
+  text-align: center
+  width: 100%
+  margin: 0 auto 30px
+  position: relative
+  min-height: 320px
+  .status
+    line-height: 180px
+    font-size: 32px
+    color: #888
+    font-weight: bold
+    display: block
+    margin: 0 auto
+    position: absolute
+    width: 100%
+
+//Pricing section
+//Contact US section
+.employee-contact
+  padding: 60px 0
+  background: #333
+  color: #fff
+  .page-title
+    color: #fff
+  .contact-social
+    display: block
+    margin: 40px 0
+    padding: 0
+    li
+      font-size: 22px
+      list-style: none
+      display: block
+      padding: 5px 0
+      a
+        color: #999
+        font-size: 22px
+        text-decoration: none
+        span
+          color: #fa3e25
+.employee-contact-form
+  //font-size, color
+  @include custom_placeholder(16px,#aaa)
+  .form-control
+    border-radius: 4px
+    box-shadow: none
+    background: #444
+    border-color: #333
+    font-size: 16px
+    padding: 10px
+    color: #fff
+    &:not(textarea)
+      min-height: 42px
+.contact-form-submit
+  background: lighten(#fa3e25,4%)
+  color: #fff
+  border-radius: 4px
+  width: 100%
+  border-color: lighten(#fa3e25,2%)
+  transition: all 0.3s ease-in 0.05s
+  &:hover,&:active,&:focus
+    background: lighten(#fa3e25,8%)
+    border-color: lighten(#fa3e25,6%)
+
+//Footer
+.employee-footer
+  padding: 10px
+  background: #2a2a2a
+  border-top: 2px solid #504F4F
+  color: #aaa
+  .footer-list
+    padding: 0
+    margin: 0
+    list-style: none
+    @media all and (max-width: $screen-xs - 1)
+      text-align: center!important
+      margin: 5px
+    li
+      list-style: none
+      display: inline-block
+      margin-right: 10px
+      @media all and (max-width: $screen-xs - 1)
+        text-align: center!important
+      &:last-child
+        margin-right: 0
+      a
+        text-decoration: none
+        color: #aaa
+    &.left
+      text-align: left
+    &.right
+      text-align: right

@@ -1,0 +1,278 @@
+@extends('layouts.employee')
+
+@section('extra_css')
+
+@stop
+
+@section('content')
+.employee
+  .employee-landing
+    %h1.title
+      Sibin Xavier
+    %h2.profession
+      Designer + Developer
+    .employee-social
+      %ul
+        %li
+          %a{:href=>"https://www.facebook.com/sibinx7",:target=>'blank'}
+            %span.fa.fa-facebook
+        %li
+          %a{:href=>"https://twitter.com/7chipcom",:target=>'blank'}
+            %span.fa.fa-twitter
+        %li
+          %a{:href=>"https://plus.google.com/u/0/+sibinxavier",:target=>'blank'}
+            %span.fa.fa-google-plus
+        %li
+          %a{:href=>"https://github.com/sibinx7",:target=>'blank'}
+            %span.fa.fa-github
+        %li
+          %a{:href=>"https://in.linkedin.com/pub/sibin-xavier/29/55/135",:target=>'blank'}
+            %span.fa.fa-linkedin
+        %li
+          %a{:href=>"https://www.youtube.com/user/sibin7771",:target=>'blank'}
+            %span.fa.fa-youtube
+.employee-header#employee-header
+  %nav.navbar.navbar-default.home-navbar
+    .container
+      .navbar-header
+        %button.navbar-toggle.collapsed{:type=>"button",:data=>{:toggle => "collapse",:target=>"#home-menu"},:aria=>{:expanded=>"false"}}
+          %span.sr-only Toggle Navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand.home-navbar-brand{:href=>"#"}
+          Sibin Xavier
+      .navbar-collapse.collapse#home-menu.home-main-menu
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            %a{:href=>"#"}
+              Home
+          %li
+            %a{:href=>"#"}
+              About
+          %li
+            %a{:href=>"#"}
+              Resume
+          %li
+            %a{:href=>"#"}
+              Skills
+          %li
+            %a{:href=>"#"}
+              Work
+          %li
+            %a{:href=>"#"}
+              Pricing
+          %li
+            %a{:href=>"#"}
+              Blog
+          %li
+            %a{:href=>"#"}
+              Client
+          %li
+            %a{:href=>"#"}
+              Contact
+.employee-about
+  .container
+    %h1.text-center.page-title.section-heading
+      %span //
+      About me
+    %section.page-content
+      .self-highlight
+        My Self, Sibin Xavier, an Electronics and Communication engineer, found Computer and Internet as
+        living source. Frontend Developer, PHP,Java, Ruby On Rails Developer. A Tech blogger, like to spread
+        new technologies, tech tips through my blog.
+      .self-description
+        I'm a self-taught designer with just over 2 years of UX/UI design and front-end coding
+        experience. I have a minimalist design style and believe that simple user experiences
+        are both powerful and meaningful. I like to use modern technologies and tools to make my profession
+        funny and interesting. I always open my mind to learn newbies as soon as possible.
+        Beside this I'm a PHP Developer, Ruby On Rails Developer,
+        I like Javascript, and it's countless frameworks. I'm a rigid fan of Windows operating system,
+        Hitman games & James Bind movies.
+
+.employee-details
+  .container
+    %secion.my-details
+      .row
+        .col-xs-12.col-sm-4.col-md-4
+          .my-profile.profile-image
+            %img.full-width-image{:src=>"{{url('public/images/employees/jags-sibin-xavier.jpg')}}"}
+        .col-xs-12.col-sm-4.col-md-4
+          .my-profile.contact-details
+            %table
+              %tr
+                %td
+                  %span.fa.fa-child
+                  Birthdate
+                %td 27/ 02 / 1991
+              %tr
+                %td
+                  %span.fa.fa-phone
+                  Phone
+                %td 8943648198, 8281604078
+              %tr
+                %td
+                  %span.fa.fa-inbox
+                  Email
+                %td sibinx7@gmail.com, sibinx7@outlook.com
+              %tr
+                %td
+                  %span.fa.fa-globe
+                  Website
+                %td jags
+              %tr
+                %td
+                  %span.fa.fa-map-marker
+                  Address
+                %td
+                  %p
+                    Thottankara House
+                  %p
+                    East Cheranalloor, Koovappady
+                  %p
+                    Perumbavoor, Ernakulam
+                  %p
+                    PIN 683544
+              %tr
+                %td
+                  %span.fa.fa-skype
+                  Skype
+                %td sibin.xavier1
+          .clearfix
+          .download-resume.text-center
+            %a.btn.btn-lg.btn-download.btn-resume{:href=>"#"}
+              %span.fa.fa-download
+              Download Resume
+        .col-xs-12.col-sm-4.col-md-4
+          .my-profile.hobbies
+            %h3.title
+              Hobbies and Interests
+            .my-hobbies
+              %ul
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-bed
+
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-motorcycle
+
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-beer
+
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-binoculars
+
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-cutlery
+
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-gamepad
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-users
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-money
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-film
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-female
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-camera
+                %li
+                  %a{:href=>""}
+                    %span.fa.fa-book
+.employee-resume
+  .container
+    %section.my-resume
+      %h1.title.text-center.section-heading.page-title
+        My Resume
+      .row
+        .col-xs-12
+          .resume-box
+            .resume-inner-experience.resume-box-inner
+              .experience-section
+                %h1.page-sub-title.highlight.text-uppercase
+                  Experiences
+                .experience-icon
+                  %span.fa.fa-user-secret
+              .resume-inner
+                @include('employee._resume')
+            .resume-inner-education.resume-box-inner
+              .experience-section
+                %h1.page-sub-title.highlight.text-uppercase
+                  Education
+                .experience-icon
+                  %span.fa.fa-graduation-cap
+              .resume-inner
+                @include('employee._education')
+            .resume-stop
+              .experience-icon
+                %span.fa.fa-bomb
+.employee-quotes
+  .container
+    .row
+      .col-xs-12
+        %h1.title.text-center.text-uppercase
+          Inspiring Quotes!!
+        .clearfix
+        .quotes-quotes
+          %section.quotes-container#slick-quotes
+            .each-quotes
+              .quote-content
+                If you are born poor its not your mistake, But if you die poor its your mistake.
+              .quotes-author
+                Bill Gates
+            .each-quotes
+              .quote-content
+                Stay Hungry Stay Foolish
+              .quotes-author
+                Steve Jobs
+            .each-quotes
+              .quote-content
+                Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.
+              .quotes-author
+                Francis of Assisi
+            .each-quotes
+              .quote-content
+                Put your heart, mind, and soul into even your smallest acts. This is the secret of success.
+              .quotes-author
+                Swami Sivananda
+            .each-quotes
+              .quote-content
+                What you do today can improve all your tomorrows.
+              .quotes-author
+                Ralph Marston
+        .quotes-nav
+          %button#slick-q-prev.slick-pvs
+            %span.fa.fa-chevron-left
+          %button#slick-q-next.slick-nxt
+            %span.fa.fa-chevron-right
+.clearfix
+@include('employee._myservice')
+.clearfix
+@include('employee._skills')
+.clearfix
+@include('employee._pricing')
+.clearfix
+@include('employee._contact')
+.clearfix
+@include('employee._footer')
+
+
+
+
+@stop
+
+@section('extra_js')
+%script{:src=>"{{url('public/js/lib/slick.min.js')}}",:type=>"text/javascript"}
+%script{:src=>"{{url('public/js/lib/jquery.easypiechart.min.js')}}",:type=>"text/javascript"}
+@stop

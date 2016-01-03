@@ -1,0 +1,61 @@
+@extends('layouts.home')
+@section('content')
+%section.about-page
+  .container
+    .about-inner
+      .row
+        .col-xs-12
+          / Section About company
+          %h2.about-title About Us
+          .row
+            .col-xs-12.col-sm-12
+              .about-company
+                .row
+                  .col-xs-12.col-sm-6
+                    .we-dream
+                      %img.img-responsive{src:"{{asset('public/images/we-dream.jpg')}}",alt:"Our dreams"}
+                  .col-xs-12.col-sm-6
+                    %article
+                      %b We
+                      started our journey in 2010 with '7chip;, 7chip is a technology blog to share news, tips for windows
+                      and Linux. We continue 7chip for a long time, at that time we have almost 20k Facebook fans from various
+                      part of the world. After 2014 we had decided to move Web development/design field while we keeping our blog
+                      active. We had completed many computer courses to fuel life. Currently we take Projects/ Tasks from
+                      Freelancer website.
+                    %article
+                      %b We are a
+                      %b
+                        %i Bed room
+                      company, we haven't any office or anything, we use our bedrooms as our office. We have a
+                      hard working mind to lead our clients to success. Our success stories can found in
+                      freelancer website
+
+          / eof section about
+          / eof Section work
+      .row
+        .col-xs-12
+          .team-section
+            / Section team
+            %h2.team-title Team
+            .clearfix
+            .team-members
+              .row
+                .col-sm-6.col-md-4
+                  .thumbnail
+                    %img{src:"{{asset('public/images/employees/jags-sibin-xavier.jpg')}}",alt:"Sibin Xavier"}
+                    .caption
+                      %h4
+                        <?php  $url_param = ['name' => 'sibin']?>
+                        %a{href:"{{action('EmployeeController@profile',$url_param)}}"}
+                          Sibin Xavier
+                      %p
+                        Sibin Xavier is CEO and Founder of Jags Solutions. He hold a bachelor degree
+                        in Electronics and Communication along with a couple of
+                        Computer courses. He is a Full stack developer with more experience in
+                        Frontend development.
+                      %hr
+                      %ul.position
+                        %li Founder
+                        %li CEO
+            / eof section team
+@stop

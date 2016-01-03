@@ -1,0 +1,45 @@
+//Variables
+$screen-xss  : 480px
+$screen-xs   : 768px
+$screen-sm   : 992px
+$screen-md   : 1200px
+$screen-lg   : 1600px
+
+$base-margin: 10
+$window-width : 100%
+$slice-xs: 1
+$slice-sm: 2
+$slice-md: 3
+$slice-lg: 4
+.text-bold
+  font-weight: bold
+@for $margin from 1 through 5
+  .margin-top-#{$margin * $base-margin}
+    margin-top: #{$margin * $base-margin}px
+  .margin-bottom-#{$margin * $base-margin}
+    margin-bottom: #{$margin * $base-margin}px 
+$light-green : #34B990
+$medium-green : darken($light-green,5%)
+$dark-green : darken($light-green,10%)
+
+@mixin border-radius($top-right,$bottom-right,$bottom-left,$top-left)
+  border-top-right-radius: $top-right
+  border-bottom-right-radius: $bottom-right
+  border-bottom-left-radius: $bottom-left
+  border-top-left-radius: $top-left
+
+  -webkit-border-top-right-radius: $top-left
+  -webkit-border-bottom-right-radius: $bottom-right
+  -webkit-border-bottom-left-radius: $bottom-left
+  -webkit-border-top-left-radius: $top-left
+
+  -moz-border-radius-topright: $top-right
+  -moz-border-radius-bottomright: $bottom-right
+  -moz-border-radius-bottomleft: $bottom-left
+  -moz-border-radius-topleft: $top-left
+
+.full-width-image
+  width: 100%
+  height: 100%
+
+//

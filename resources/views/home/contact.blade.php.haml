@@ -1,0 +1,69 @@
+@extends('layouts.home')
+@section('content')
+%section.contact-page
+  .container
+    .contact-inner
+      .row
+        .col-xs-12
+          @if (session('message'))
+          .alert.alert-success
+            {{session('message')}}
+            %button{:type=>"button",:class=>"close","data-dismiss"=>"alert","aria-label"=>"Close"}
+              %span{"aria-hidden"=>"true"}
+                &times;
+          @endif
+      .row
+        .col-xs-12
+          %h1.text-center  Contact Us
+          %hr
+          .contact-about
+            %article
+              %b @ Jags
+              we are always ready to help you, If you have any small, medium, personal web applications, feel free
+              to send us an email. You can use below contact form to send message. We will reply within 24 Hours
+          .contact-form-section
+            .row
+              .col-xs-12.col-sm-6
+                %h3 We provide service for
+                %hr
+                  %ul.nav.nav-stacked
+                    %li
+                      %h4 Personal website in Wordpress, Drupal, Laravel
+                    %li
+                      %h4 Portfolio websites in Laravel, FuelPHP
+                    %li
+                      %h4 Frontend works in Angular, React, Backbone and many
+                    %li
+                      %h4 Wordpress, Drupal templates
+                    %li
+                      %h4 E-commerce applications (small and medium)
+                    %li
+                      %h4 Other small and medium web applications
+                    %li
+                      %h4 Custom HTML Templates
+                    %li
+                      %h4 Email templates with ink
+
+              .col-xs-12.col-sm-6.contact-form-wrapper
+                %h3 Send your message
+                %hr
+                %form{:action=>"{{action('HomeController@post_contact')}}",:method=>"post"}
+                  %input{:type=>"hidden",:name=>"_token",:value=>"{!!csrf_token()!!}"}
+                  .form-group
+                    %label Name
+                    %input.form-control{:placeholder=>"Please enter your Name",:name=>"name"}
+                  .form-group
+                    %label Email
+                    %input.form-control{:placeholder=>"Please enter your Email Address",:name=>"email"}
+                  .form-group
+                    %label Phone
+                    %input.form-control{:placeholder=>"Please enter your Phone Number",:name=>"phone"}
+                  .form-group
+                    %label Message
+                    %textarea.form-control{:rows=>6,:placeholder=>"Please enter your Message",:name=>"message"}
+                  .form-group.text-right
+                    %button.btn.btn-primary.btn-md
+                      %span.glyphicon.glyphicon-send
+                      %b SEND
+
+@stop
