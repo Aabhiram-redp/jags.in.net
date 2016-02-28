@@ -6,7 +6,8 @@
       <div class='row'>
         <div class='col-xs-12'>
           <!-- Section About company -->
-          <h2 class='about-title'>About Us</h2>
+          <h2 class='about-title text-center page-title'>About Us</h2>
+          <hr>
           <div class='row'>
             <div class='col-xs-12 col-sm-12'>
               <div class='about-company'>
@@ -53,16 +54,16 @@
               <div class='row'>
                 <div class='col-sm-6 col-md-4'>
                   <div class='thumbnail'>
-                    <img alt='Sibin Xavier' src="{{asset('public/images/employees/jags-sibin-xavier.jpg')}}">
+                    <img alt='Sibin Xavier' class='full-width-image' src="{{asset('public/images/employees/jags-sibin-xavier.jpg')}}">
                     <div class='caption'>
-                      <h4>
+                      <h3 class='name-title'>
                         <?php  $url_param = ['name' => 'sibin']?>
                         <a href="{{action('EmployeeController@profile',$url_param)}}">
                           Sibin Xavier
                         </a>
-                      </h4>
+                      </h3>
                       <p>
-                        Sibin Xavier is CEO and Founder of Jags Solutions. He hold a bachelor degree
+                        Sibin Xavier is CEO and Founder of Jags. He hold a bachelor degree
                         in Electronics and Communication along with a couple of
                         Computer courses. He is a Full stack developer with more experience in
                         Frontend development.

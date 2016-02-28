@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="{{url('public/favicon.ico')}}" rel='shortcut icon'>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jags | Just Another Game and Software Development Company</title>
     <meta name="keywords" content="Ruby On Rails, Laravel, HTML5, Wordpress, Drupal, CSS3, Javascript, Angular JS"/>

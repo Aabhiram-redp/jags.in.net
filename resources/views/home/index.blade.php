@@ -17,7 +17,6 @@
               <div class="col-xs-12 col-sm-12 col-md-6">
                 <h1 class="">Web Design & Development</h1>
                 <article class="" >
-
                   Jags is a software development company located at the bank of holy river Periyar, East Cheranaloor, Kerala, South India. We call our
                   self as a bedroom company, We all work from our home and we don't have any office or anyother setups. We are expertised in Rails,
                   PHP, Wordpress and Frontend Development. If you are looking for a cheap but quality small/medium projects, send us your queries.

@@ -6,7 +6,8 @@
       .row
         .col-xs-12
           / Section About company
-          %h2.about-title About Us
+          %h2.about-title.text-center.page-title About Us
+          %hr
           .row
             .col-xs-12.col-sm-12
               .about-company
@@ -42,14 +43,14 @@
               .row
                 .col-sm-6.col-md-4
                   .thumbnail
-                    %img{src:"{{asset('public/images/employees/jags-sibin-xavier.jpg')}}",alt:"Sibin Xavier"}
+                    %img.full-width-image{src:"{{asset('public/images/employees/jags-sibin-xavier.jpg')}}",alt:"Sibin Xavier"}
                     .caption
-                      %h4
+                      %h3.name-title
                         <?php  $url_param = ['name' => 'sibin']?>
                         %a{href:"{{action('EmployeeController@profile',$url_param)}}"}
                           Sibin Xavier
                       %p
-                        Sibin Xavier is CEO and Founder of Jags Solutions. He hold a bachelor degree
+                        Sibin Xavier is CEO and Founder of Jags. He hold a bachelor degree
                         in Electronics and Communication along with a couple of
                         Computer courses. He is a Full stack developer with more experience in
                         Frontend development.
@@ -58,4 +59,5 @@
                         %li Founder
                         %li CEO
             / eof section team
+
 @stop

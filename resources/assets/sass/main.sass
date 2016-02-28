@@ -650,6 +650,47 @@ html,body
 /** About page **/
 .about-page
   padding: 120px 0 80px
-
+  .page-title
+    font-weight: bold
+.about-company
+  article
+    line-height: 22px
+    font-size: 16px
+    color: #333
+    letter-spacing: 1.2px
+    margin-bottom: 10px
+    text-align: justify
+.team-section
+  display: block
+  padding: 40px 0 60px
+  .team-title
+    margin: 10px 0 20px
+    text-align: center
+    font-weight: bold
+  .caption
+    .name-title
+      a
+        color: #3a956b
+        font-weight: bold
+      + p
+        font-size: 15px
+        line-height: 19px
+        color: #555
+        text-align: justify
+    .position
+      display: block
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        @include border-radius(4px,4px,4px,4px)
+        background: #59b289
+        border: 1px solid #398e67 
+        color: #fff
+        text-shadow: 1px 1px 0 #388461
+        font-size: 13.5px
+        font-weight: bold
+        padding: 6px 8px
+        letter-spacing: 1.05px
 /** End About Page **/
 
