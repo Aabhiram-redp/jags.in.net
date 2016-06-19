@@ -6,8 +6,8 @@
     <link href="{{asset('favicon.ico')}}" rel='shortcut icon'>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jags | Just Another Game and Software Development Company</title>
-    <meta name="keywords" content="Ruby On Rails, Laravel, HTML5, Wordpress, Drupal, CSS3, Javascript, Angular JS"/>
-    <meta name="description" content="Jags is one of the best software company in India who focus on modern web technologies">
+    <meta name="keywords" content="Ruby On Rails, Laravel, HTML5, WordPress, Drupal, CSS3, Javascript, Angular JS"/>
+    <meta name="description" content="Jags is one of the best software company in India which focus on modern web technologies like Laravel, Angular, React JS, Meter JS, MEAN stack, Ember JS, WordPress, Drupal, Knockout JS">
     <meta name="csrf_token" content="{{ csrf_token() }}">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{asset('css/main.min.css')}}" media="screen" title="no title" charset="utf-8">
