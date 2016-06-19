@@ -1,4 +1,4 @@
-<section class='extras' data-image-src="{{asset('public/images/extras-bg.jpg')}}" data-parallax='scroll' data-speed='0.1'>
+<section class='extras' data-image-src="{{asset('images/extras-bg.jpg')}}" data-parallax='scroll' data-speed='0.1'>
   <div class='extra-bg'></div>
   <div class='extras-inner'>
     <div class='container'>

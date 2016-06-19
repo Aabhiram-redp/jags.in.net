@@ -13,12 +13,12 @@
       <div class='col-xs-12 col-sm-6'>
         <ul class='footer-list right'>
           <li>
-            <a href='#'>
+            <a href="{{route('home')}}">
               Home
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href="{{route('about')}}">
               About
             </a>
           </li>

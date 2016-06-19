@@ -85,7 +85,7 @@
     <div class='clearfix'></div>
     <section class='role-in-company'>
       <article>
-        I had completed my +1 and +2 (Equalent to Pre-Degree) there, Good school, Good teachers and lots
+        I had completed my +1 and +2  there, Good school, Good teachers and lots
         of good friends, I enjoyed there very much. We bought Aquarium, We made small rockets... It was a good
         time in my life.... Really great school.
       </article>

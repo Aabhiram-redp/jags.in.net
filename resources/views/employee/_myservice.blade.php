@@ -18,7 +18,7 @@
                   </h3>
                   <article>
                     Create website with Bootstrap/Foundation/custom css.
-                    Wireframe, PSDs and more
+                    Wire frame, PSDs and more
                   </article>
                 </div>
               </div>
@@ -47,7 +47,7 @@
                     Development
                   </h3>
                   <article>
-                    Build websites in PHP, Ruby On Rails, Wordpress, Drupal and Angular.
+                    Build websites in PHP, Ruby On Rails, WordPress, Drupal and Angular.
                   </article>
                 </div>
               </div>
@@ -61,7 +61,7 @@
                     Support
                   </h3>
                   <article>
-                    Domain migration. Host websites, SEO service. Social media marketting.
+                    Domain migration. Host websites, SEO service. Social media Marketing.
                   </article>
                 </div>
               </div>

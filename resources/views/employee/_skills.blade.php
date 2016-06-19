@@ -11,7 +11,7 @@
               <div class='skill-chart-wrapper'>
                 <div class='skill-chart' data-percent='80'>
                   <div class='status'>
-                    80%
+                    90%
                   </div>
                 </div>
                 <div class='skill-description'>
@@ -21,7 +21,7 @@
                   <section>
                     <article>
                       2 Year Experience. Good knowledge in HTML5 and CSS3.
-                      Knowledge in Canvas and SVG.I use haml/slim/jade
+                      Knowledge in Canvas and SVG.I use HAML/SLIM/JADE/Handlebar
                       in my projects
                     </article>
                   </section>
@@ -32,7 +32,7 @@
               <div class='skill-chart-wrapper'>
                 <div class='skill-chart' data-percent='60'>
                   <div class='status'>
-                    60%
+                    80%
                   </div>
                 </div>
                 <div class='skill-description'>
@@ -52,7 +52,7 @@
               <div class='skill-chart-wrapper'>
                 <div class='skill-chart' data-percent='70'>
                   <div class='status'>
-                    70%
+                    75%
                   </div>
                 </div>
                 <div class='skill-description'>
@@ -62,7 +62,7 @@
                   <section>
                     <article>
                       Popular CMS framework built in PHP. I have experience in Templates and Plugins.
-                      I start to use Wordpreass since 2010
+                      I start to use WordPress since 2010
                     </article>
                   </section>
                 </div>
@@ -72,7 +72,7 @@
               <div class='skill-chart-wrapper'>
                 <div class='skill-chart' data-percent='40'>
                   <div class='status'>
-                    40%
+                    30%
                   </div>
                 </div>
                 <div class='skill-description'>
@@ -93,7 +93,7 @@
               <div class='skill-chart-wrapper'>
                 <div class='skill-chart' data-percent='60'>
                   <div class='status'>
-                    60%
+                    70%
                   </div>
                 </div>
                 <div class='skill-description'>
@@ -113,7 +113,7 @@
               <div class='skill-chart-wrapper'>
                 <div class='skill-chart' data-percent='40'>
                   <div class='status'>
-                    40%
+                    50%
                   </div>
                 </div>
                 <div class='skill-description'>
@@ -122,8 +122,8 @@
                   </h2>
                   <section>
                     <article>
-                      Beautiful and well documeneted MVC Framework written in Ruby.
-                      Website development vert easy wirh Ruby On Rails. Gems make life better.
+                      Beautiful and well documented MVC Framework written in Ruby.
+                      Website development very easy with Ruby On Rails. Gems make life better.
                       1 Year Experience in Ruby On Rails.
                     </article>
                   </section>

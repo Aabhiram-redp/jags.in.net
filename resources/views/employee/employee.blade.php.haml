@@ -31,6 +31,9 @@
         %li
           %a{:href=>"https://www.youtube.com/user/sibin7771",:target=>'blank'}
             %span.fa.fa-youtube
+        %li
+          %a{:href=>"https://www.freelancer.com/u/sibinx7.html"}
+            %span.fa.fa-user
 .employee-header#employee-header
   %nav.navbar.navbar-default.home-navbar
     .container
@@ -96,7 +99,7 @@
       .row
         .col-xs-12.col-sm-4.col-md-4
           .my-profile.profile-image
-            %img.full-width-image{:src=>"{{url('public/images/employees/jags-sibin-xavier.jpg')}}"}
+            %img.full-width-image{:src=>"{{asset('images/employees/jags-sibin-xavier.jpg')}}"}
         .col-xs-12.col-sm-4.col-md-4
           .my-profile.contact-details
             %table
@@ -273,6 +276,6 @@
 @stop
 
 @section('extra_js')
-%script{:src=>"{{url('public/js/lib/slick.min.js')}}",:type=>"text/javascript"}
-%script{:src=>"{{url('public/js/lib/jquery.easypiechart.min.js')}}",:type=>"text/javascript"}
+%script{:src=>"{{asset('js/lib/slick.min.js')}}",:type=>"text/javascript"}
+%script{:src=>"{{asset('js/lib/jquery.easypiechart.min.js')}}",:type=>"text/javascript"}
 @stop

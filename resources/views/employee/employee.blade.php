@@ -42,6 +42,11 @@
             <span class='fa fa-youtube'></span>
           </a>
         </li>
+        <li>
+          <a href='https://www.freelancer.com/u/sibinx7.html'>
+            <span class='fa fa-user'></span>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -142,7 +147,7 @@
       <div class='row'>
         <div class='col-xs-12 col-sm-4 col-md-4'>
           <div class='my-profile profile-image'>
-            <img class='full-width-image' src="{{url('public/images/employees/jags-sibin-xavier.jpg')}}">
+            <img class='full-width-image' src="{{asset('images/employees/jags-sibin-xavier.jpg')}}">
           </div>
         </div>
         <div class='col-xs-12 col-sm-4 col-md-4'>
@@ -410,6 +415,6 @@
 @include('employee._footer')
 @stop
 @section('extra_js')
-<script src="{{url('public/js/lib/slick.min.js')}}" type='text/javascript'></script>
-<script src="{{url('public/js/lib/jquery.easypiechart.min.js')}}" type='text/javascript'></script>
+<script src="{{asset('js/lib/slick.min.js')}}" type='text/javascript'></script>
+<script src="{{asset('js/lib/jquery.easypiechart.min.js')}}" type='text/javascript'></script>
 @stop

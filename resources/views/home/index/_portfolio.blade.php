@@ -11,37 +11,37 @@
           <div class='portfolios'>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/dashboard.jpg')}}">
+                <img src="{{asset('images/portfolio/dashboard.jpg')}}">
               </a>
             </div>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/dashboard-2.jpg')}}">
+                <img src="{{asset('images/portfolio/dashboard-2.jpg')}}">
               </a>
             </div>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/danji-manji.jpg')}}">
+                <img src="{{asset('images/portfolio/danji-manji.jpg')}}">
               </a>
             </div>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/rails.jpg')}}">
+                <img src="{{asset('images/portfolio/rails.jpg')}}">
               </a>
             </div>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/taletsindia.jpg')}}">
+                <img src="{{asset('images/portfolio/taletsindia.jpg')}}">
               </a>
             </div>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/videoreels.jpg')}}">
+                <img src="{{asset('images/portfolio/videoreels.jpg')}}">
               </a>
             </div>
             <div class='single-portfolio'>
               <a>
-                <img src="{{url('public/images/portfolio/vijaya.jpg')}}">
+                <img src="{{asset('images/portfolio/vijaya.jpg')}}">
               </a>
             </div>
           </div>

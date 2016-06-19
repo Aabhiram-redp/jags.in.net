@@ -1,12 +1,12 @@
 @extends('layouts.home')
 @section('content')
 <div class="home main-home">
-  <div class="home-wrapper" id="home-landing">
-    <div class="home-video-wrapper">
-      <video  autoplay loop poster="{{url('public/images/website-bg-1.png')}}">
-        <source src="{{url('public/video/imac-design.mp4')}}"  type="video/mp4">
-      </video>
-    </div>
+  <div class="home-wrapper" id="home-landing" style="background-image: url({{asset('images/background.jpg')}})">
+    <!-- <div class="home-video-wrapper">
+      <video  autoplay loop poster="{{asset('images/website-bg-1.png')}}">
+        <source src="{{asset('video/imac-design.mp4')}}"  type="video/mp4">
+      </video> 
+    </div>-->
     <div class="home-main-black-wrapper">
     </div>
     <div class="home-main-wrapper">
@@ -56,11 +56,11 @@
 @section('extra_css')
 @stop
 @section('extra_js')
-  <script type="text/javascript" src="{{url('public/js/lib/slick.min.js')}}"></script>
-  <script type="text/javascript" src="{{url('public/js/lib/parallax.min.js')}}"></script>
-  <script type="text/javascript" src="{{url('public/js/components/testimonials_slider.js')}}"></script>
-  <script type="text/javascript" src="{{url('public/js/lib/isotope.pkgd.min.js')}}"></script>
-  <script type="text/javascript" src="{{url('public/js/lib/masonry-horizontal.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/lib/slick.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/lib/parallax.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/components/testimonials_slider.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/lib/isotope.pkgd.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/lib/masonry-horizontal.js')}}"></script>
   <script type="text/javascript">
       $(window).load(function(){
             $('.portfolios').isotope({

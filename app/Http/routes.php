@@ -11,9 +11,9 @@
 |
 */
 
-  Route::get('/','HomeController@index');
-  Route::get('/contact','HomeController@contact');
-  Route::get('/about','HomeController@about');
+  Route::get('/',['uses'=>'HomeController@index','as'=>'home']);
+  Route::get('/contact',['uses'=>'HomeController@contact','as'=>'contact']);
+  Route::get('/about',['uses'=>'HomeController@about','as'=>'about']);
   Route::post('/post_contact','HomeController@post_contact');
 
   Route::get('team','EmployeeController@index');

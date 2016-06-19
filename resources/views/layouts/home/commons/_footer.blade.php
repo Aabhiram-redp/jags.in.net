@@ -7,7 +7,7 @@
           <div class='col-xs-12 col-sm-4 col-md-4'>
             <div class='footer-left text-left'>
               <p>
-                Copyright © 2015 JAGS
+                Copyright © {{date('Y')}} JAGS
                 <sup>
                   TM
                 </sup>
@@ -30,17 +30,17 @@
               </ul>
             </div>
           </div>
-          <div class='col-xs-12 col-sm-4 col-md-4'>
+          <div class='col-xs-1 col-sm-4 col-md-4'>
             <div class='footer-right text-right'>
               <ul class='footer-more-links'>
                 <li>
-                  <a href="{{action('HomeController@index')}}">Home</a>
+                  <a>Home</a>
                 </li>
                 <li>
-                  <a href="{{action('HomeController@contact')}}">Contact</a>
+                  <a>Contact</a>
                 </li>
                 <li>
-                  <a href="{{action('HomeController@about')}}">
+                  <a>
                     About
                   </a>
                 </li>

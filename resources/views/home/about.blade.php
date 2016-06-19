@@ -14,7 +14,7 @@
                 <div class='row'>
                   <div class='col-xs-12 col-sm-6'>
                     <div class='we-dream'>
-                      <img alt='Our dreams' class='img-responsive' src="{{asset('public/images/we-dream.jpg')}}">
+                      <img alt='Our dreams' class='img-responsive' src="{{asset('images/we-dream.jpg')}}">
                     </div>
                   </div>
                   <div class='col-xs-12 col-sm-6'>
@@ -54,7 +54,7 @@
               <div class='row'>
                 <div class='col-sm-6 col-md-4'>
                   <div class='thumbnail'>
-                    <img alt='Sibin Xavier' class='full-width-image' src="{{asset('public/images/employees/jags-sibin-xavier.jpg')}}">
+                    <img alt='Sibin Xavier' class='full-width-image' src="{{asset('images/employees/jags-sibin-xavier.jpg')}}">
                     <div class='caption'>
                       <h3 class='name-title'>
                         <?php  $url_param = ['name' => 'sibin']?>

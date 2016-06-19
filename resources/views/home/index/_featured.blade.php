@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-5">
           <div class="featured-responsive">
-            <img src="{{url('public/images/responsive-design.jpeg')}}" alt="Responsive Web Designing" />
+            <img src="{{asset('images/responsive-design.jpeg')}}" alt="Responsive Web Designing" />
           </div>
         </div>
         <div class="col-xs-12 col-sm-7">
