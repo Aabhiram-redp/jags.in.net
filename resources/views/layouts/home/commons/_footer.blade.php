@@ -34,13 +34,13 @@
             <div class='footer-right text-right'>
               <ul class='footer-more-links'>
                 <li>
-                  <a>Home</a>
+                  <a href="{{route('home')}}">Home</a>
                 </li>
                 <li>
-                  <a>Contact</a>
+                  <a href="{{route('contact')}}">Contact</a>
                 </li>
                 <li>
-                  <a>
+                  <a href="{{route('about')}}">
                     About
                   </a>
                 </li>
